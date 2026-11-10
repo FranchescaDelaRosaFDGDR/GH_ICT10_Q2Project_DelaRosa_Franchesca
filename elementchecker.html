@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Q2 Project</title>
+    <style>
+        a {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #303439;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        form {
+            background-color: #42474e;
+            border: 2px solid #656b73;
+            border-radius: 15px;
+            padding: 40px 25px;
+            max-width: 600px;
+            margin: 50px auto 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-weight: normal;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 300px;
+            margin-top: 10px;
+            background-color: #25292e;
+            color: white;
+            border: 1px solid #777;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1b1e22;
+        }
+        #output {
+            background-color: #42474e;
+            border: 2px solid #656b73;
+            border-radius: 15px;
+            padding: 30px 25px;
+            max-width: 600px;
+            margin: 50px auto 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+       * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+    nav {
+    background-color: #222831;
+    padding: 12px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #454c56;
+    color: #ffffff;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+footer {
+            background-color: #222831;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="index.html">
+        <img src="gossiping.png" alt="Logo" height="60">
+    </a>
+    <a href="index.html">Club Member Checker</a>
+    <a href="elementchecker.html">Element Checker</a>
+    <a href="clubmembers.html">School Club Members</a>
+    <a href="meetcreator.html">Meet the Creator</a>
+    </nav>
+    <form>
+        <h1>Non-metal Elements</h1>
+        <h3>
+            Enter the element symbol of a non-metal from the periodic table
+            to find out its element name, atomic number, and atomic mass.
+        </h3>
+        <input type="text" id="symbol" placeholder="Enter element symbol">
+        <div>
+            <button type="button" py-click="element_details">
+                Check Details
+            </button>
+        </div>
+    </form>
+    <div id="output"></div>
+    <py-script src="main.py"></py-script>
+    <footer>
+        Franchesca Dela Rosa | 10 - Topaz | © 2026
+    </footer>
+</body>
+</html>

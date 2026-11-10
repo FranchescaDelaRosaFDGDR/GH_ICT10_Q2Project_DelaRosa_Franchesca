@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Q2 Project</title>
+    <style>
+    input[type="text"] {
+        padding: 12px;      
+        font-size: 16px;    
+        width: 250px;       
+        margin-bottom: 15px; 
+        display: inline-block;
+        text-align: center;    
+    }
+
+    button {
+        padding: 12px 24px;  
+        font-size: 16px;  
+        width: 250px;    
+        margin-top: 10px;    
+    }
+    .form-btn:hover {
+            background-color: #303439; 
+    }
+    * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+    nav {
+    background-color: #222831;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 12px;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #454c56;
+    color: #ffffff;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+footer {
+            background-color: #222831;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body style="background-color: #303439; color: black; text-align: center; padding: 0%;">
+    <nav>
+    <a href="index.html">
+        <img src="gossiping.png" alt="Logo" height="60">
+    </a>
+    <a href="index.html">Club Member Checker</a>
+    <a href="elementchecker.html">Element Checker</a>
+    <a href="clubmembers.html">School Club Members</a>
+    <a href="meetcreator.html">Meet the Creator</a>
+    </nav>
+    <br>
+    <div style="display: inline-block; text-align: left; background-color: #ffffff; padding: 3%; border-radius: 8px;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border: 1px solid #e0e0e0;">
+    <form style="text-align: center; padding: 2%;">
+        <h1>Welcome to the Gossip Club Checker!</h1><br>
+        <h3>Input your first and last name to check if you have qualified for the OBMC Gossip Club:</h3>
+        <input type="text" id="first_name" placeholder="Enter your first name"><br>
+        <input type="text" id="last_name" placeholder="Enter your last name"><br>
+        <input type="button" py-click="check_student" value="Search" style="width: 250px; padding: 12px 24px;  
+        font-size: 16px;">
+    </form>
+    </div><br>
+    <div id="output" style="color: white; padding: 3%; font-size: 24px;"></div>
+    <py-script src="main.py"></py-script> 
+    <footer>
+        Franchesca Dela Rosa | 10 - Topaz | © 2026
+    </footer> 
+</body>
+</html>
